@@ -13,7 +13,6 @@
   }
   var noTerm = termCounter;
 
-
   var rowCounter = 0;
 for (var def=0;def < noDef;def++) {
   for(var term=0;term<noTerm;term++) {
@@ -21,23 +20,19 @@ for (var def=0;def < noDef;def++) {
     document.getElementsByName("pairs[definition]["+ rowCounter+"]")[0]
     .children[def+1]
     .selected = true;
-//    .setAttribute("selected","selected");
 
     document.getElementsByName("pairs[definition]["+ rowCounter+"]")[0]
     .children[def+1]
     .text=document.getElementsByName("definitions[answer]["+def+"]")[0]
-    // .getAttribute("value");
     .value;
 
     document.getElementsByName("pairs[term]["+ rowCounter+"]")[0]
     .children[term+1]
     .selected = true;
-    //.setAttribute("selected","selected");
 
     document.getElementsByName("pairs[term]["+ rowCounter+"]")[0]
     .children[term+1]
     .text=document.getElementsByName("terms[answer]["+term+"]")[0]
-    // .getAttribute("value");
     .value;
 
     document.getElementsByName("pairs[points]["+ rowCounter+"]")[0]
